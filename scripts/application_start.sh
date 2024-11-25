@@ -1,6 +1,8 @@
-
 #!/bin/bash
 echo "Starting the application..."
 cd /home/ubuntu/
 npm install
-nohup node app.js > app.log 2>&1 &
+# Example: Starting a Node.js app
+echo "Starting application..."
+nohup node server.js > /var/log/myapp.log 2>&1 &
+
